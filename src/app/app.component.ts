@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'data-binding-app';
+  count:number = 0;
+  
+  onClick(){
+    this.count++;
+  }
+  hidelabel:boolean = true;
+  showLabel(){
+    if(this.hidelabel){
+      this.hidelabel = false;
+    }else{
+      this.hidelabel = true;  
+    }
+  }
 }
+
+
